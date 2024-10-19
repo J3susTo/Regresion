@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea IA</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #34495e;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-top: 30px;
+            text-align: center;
+        }
+        p {
+            padding: 0 10%;
+            text-align: justify;
+            font-size: 1.3rem;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        table {
+            width: 40%;
+            margin: 0 auto 40px;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: bold;
+        }
+        td {
+            text-align: center;
+            font-size: 1rem;
+            color: #333;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f1f1f1;
+        }
+        pre {
+            background-color: #ecf0f1;
+            border: 1px solid #dfe6e9;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-x: auto;
+        }
+                /* Estilo para los enlaces */
+                a {
+            color: #005a9c;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            background: #d0e6f3;
+            width: 70%;
+            margin: 0 auto;
+            padding: 5%;
+        }
+                /* Botón de Descarga */
+                .download-link {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #ff5722;
+            color: white;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 42%;
+            transition: background-color 0.3s ease;
+        }
+        .download-link:hover {
+            background-color: #e64a19;
+        }
+        /* Estilos responsivos */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Relación Directa</h1>
+        <p>Una relación directa ocurre cuando, al aumentar una variable, la otra también aumenta de manera proporcional. 
+            Es decir, ambas variables se mueven en la misma dirección.</p>
+
+        <h2>Ejercicio: Horas de Trabajo vs Salario</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Horas de trabajo</th>
+                    <th>Salario ($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>15</td></tr>
+                <tr><td>2</td><td>30</td></tr>
+                <tr><td>3</td><td>45</td></tr>
+                <tr><td>4</td><td>60</td></tr>
+                <tr><td>5</td><td>75</td></tr>
+                <tr><td>6</td><td>90</td></tr>
+                <tr><td>7</td><td>105</td></tr>
+                <tr><td>8</td><td>120</td></tr>
+                <tr><td>9</td><td>135</td></tr>
+            </tbody>
+        </table>
+
+        <p>Aquí, se observa una relación directa entre las horas de trabajo y el salario. 
+            A medida que aumentan las horas trabajadas, el salario también aumenta de manera proporcional. 
+            Esto sugiere que el salario se calcula a una tasa fija por hora (en este caso, $15 por hora).</p>
+
+            <h1>REGRESION LINEAL </h1>
+
+        <img src="Imagen3.png" alt="" style="width: 70%;height: auto; margin-left: 15%;">
+
+        <h1>Relación Inversa</h1>
+        <p>Una relación inversa ocurre cuando al aumentar una variable la otra disminuye. Las variables se mueven en direcciones opuestas.</p>
+
+        <h2>Ejercicio: Horas de Estudio vs Errores en un Examen</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Horas de estudio</th>
+                    <th>Errores en el examen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>25</td></tr>
+                <tr><td>2</td><td>23</td></tr>
+                <tr><td>3</td><td>20</td></tr>
+                <tr><td>4</td><td>18</td></tr>
+                <tr><td>5</td><td>15</td></tr>
+                <tr><td>6</td><td>13</td></tr>
+                <tr><td>7</td><td>10</td></tr>
+                <tr><td>8</td><td>8</td></tr>
+                <tr><td>9</td><td>5</td></tr>
+            </tbody>
+        </table>
+
+        <p>En este caso, hay una relación inversa entre las horas de estudio y los errores en un examen. A medida que aumentan las horas de estudio, los errores en el examen disminuyen, lo que indica que estudiar más puede llevar a un mejor rendimiento en el examen.</p>
+
+        <img src="Imagen2.png" alt="" style="width: 70%;height: auto; margin-left: 15%;">
+
+                <h1>Relación Inversa</h1>
+        <p>Una relación inversa ocurre cuando al aumentar una variable la otra disminuye. Las variables se mueven en direcciones opuestas.</p>
+
+        <h2>Ejercicio: Horas de Estudio vs Errores en un Examen</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Horas de estudio</th>
+                    <th>Errores en el examen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>25</td></tr>
+                <tr><td>2</td><td>23</td></tr>
+                <tr><td>3</td><td>20</td></tr>
+                <tr><td>4</td><td>18</td></tr>
+                <tr><td>5</td><td>15</td></tr>
+                <tr><td>6</td><td>13</td></tr>
+                <tr><td>7</td><td>10</td></tr>
+                <tr><td>8</td><td>8</td></tr>
+                <tr><td>9</td><td>5</td></tr>
+            </tbody>
+        </table>
+
+        <p>En este caso, hay una relación inversa entre las horas de estudio y los errores en un examen. A medida que aumentan las horas de estudio, los errores en el examen disminuyen, lo que indica que estudiar más puede llevar a un mejor rendimiento en el examen.</p>
+
+        <img src="Imagen2.png" alt="" style="width: 70%;height: auto; margin-left: 15%;">
+        <br>
+        <img src="Imagen2.png" alt="" style="width: 90%;height: auto; margin-left: 5%;margin-top: 10%;">
+
+        <h1>Código para calcular regresión lineal en los casos propuestos</h1>
+        <pre>
+            import numpy as np
+            import matplotlib.pyplot as plt
+            from sklearn.linear_model import LinearRegression
+
+            # Primer conjunto (Horas de trabajo vs Salario)
+            X_directa = np.array([1, 2, 3, 4, 5]).reshape(-1, 1)  # Horas de trabajo
+            y_directa = np.array([15, 30, 45, 60, 75])  # Salario
+
+            # Segundo conjunto (Horas de estudio vs Errores en el examen)
+            X_inversa = np.array([1, 2, 3, 4, 5]).reshape(-1, 1)  # Horas de estudio
+            y_inversa = np.array([25, 23, 20, 18, 15])  # Errores en el examen
+
+            # Crear los modelos de regresión lineal
+            model_directa = LinearRegression()
+            model_inversa = LinearRegression()
+
+            # Entrenar los modelos
+            model_directa.fit(X_directa, y_directa)
+            model_inversa.fit(X_inversa, y_inversa)
+
+            # Hacer predicciones
+            y_pred_directa = model_directa.predict(X_directa)
+            y_pred_inversa = model_inversa.predict(X_inversa)
+
+            # Visualización de los resultados
+            plt.figure(figsize=(12, 6))
+
+            # Plot de la regresión directa (Horas de trabajo vs Salario)
+            plt.subplot(1, 2, 1)
+            plt.scatter(X_directa, y_directa, color='blue', label='Datos reales')
+            plt.plot(X_directa, y_pred_directa, color='red', label='Regresión Lineal')
+            plt.title('Horas de trabajo vs Salario')
+            plt.xlabel('Horas de trabajo')
+            plt.ylabel('Salario ($)')
+            plt.legend()
+
+            # Plot de la regresión inversa (Horas de estudio vs Errores en el examen)
+            plt.subplot(1, 2, 2)
+            plt.scatter(X_inversa, y_inversa, color='blue', label='Datos reales')
+            plt.plot(X_inversa, y_pred_inversa, color='red', label='Regresión Lineal')
+            plt.title('Horas de estudio vs Errores en el examen')
+            plt.xlabel('Horas de estudio')
+            plt.ylabel('Errores en el examen')
+            plt.legend()
+
+            plt.tight_layout()
+            plt.show()
+        </pre>
+        <h2>Descarga del Proyecto</h2>
+        <a class="download-link" href="TAREA-IA.docx" download>Descargar en Word</a>
+    </div>
+
+</body>
+</html>
